@@ -2,7 +2,8 @@
 
 const config = require('./config/config.js');
 const staticRoutes = require('./server/api/static.routes.js');
-const commonRoutes = require('./server/api/common.routes.js');
+const reactRoutes = require('./server/api/react.routes.js');
+const indexRoutes = require('./server/api/index.routes.js');
 
 const hapi = require('hapi');
 const path = require('path');
@@ -28,7 +29,7 @@ server.register([ vision ],
       require('babel-register') ({
         presets: ['es2015', 'react'],
       });
-      
+
     server.views({
       engines: {
         jsx: hrv
@@ -45,15 +46,6 @@ server.register([
     "register": swagger,
   }],
   (err) => {
-
-    // server.views({
-    //   engines: {
-    //     jsx: hrv
-    //   },
-    //   relativeTo: entryPoint,
-    //   path: 'views'
-    // });
-
     server.start((err) => {
       if(err)
         console.log(err);
@@ -65,4 +57,5 @@ server.register([
 console.log(entryPoint);
 
 staticRoutes.register(server, entryPoint);
-commonRoutes.register(server);
+reactRoutes.register(server);
+indexRoutes.register(server);
