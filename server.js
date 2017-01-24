@@ -5,12 +5,12 @@ const staticRoutes = require('./server/api/static.routes.js');
 const reactRoutes = require('./server/api/react.routes.js');
 const indexRoutes = require('./server/api/index.routes.js');
 
-const hapi = require('hapi');
-const path = require('path');
-const inert = require('inert');
-const vision = require('vision');
-const swagger = require('hapi-swagger');
-const hrv = require('hapi-react-views');
+const hapi = config.requires.hapi;
+const path = config.requires.path;
+const inert = config.requires.inert;
+const vision = config.requires.vision;
+const swagger = config.requires.swagger;
+const hrv = config.requires.hrv;
 
 const entryPoint = path.join(__dirname + "/");
 

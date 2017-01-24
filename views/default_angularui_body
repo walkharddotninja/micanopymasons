@@ -1,0 +1,17 @@
+<body data-ng-app="app">
+  <header data-ui-view="header"></header>
+  <main data-ui-view="main"></main>
+  <footer data-ui-view="footer"></footer>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/js/foundation.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+  <script type="text/javascript" src="modules/app.client.js"></script>
+  <script type="text/javascript" src="modules/index/index.client.routes.js"></script>
+  <script type="text/javascript" src="modules/index/calendar/client/calendar.client.main.controller.js"></script>
+  <script type="text/javascript" src="modules/index/home/client/home.client.main.controller.js"></script>
+  <script type="text/javascript" src="modules/index/links/client/links.client.main.controller.js"></script>
+  <script type="text/javascript" src="modules/index/officers/client/officers.client.main.controller.js"></script>
+  <script type="text/javascript" src="modules/index/photos/client/photos.client.main.controller.js"></script>
+  <script type="text/javascript" src="modules/index/sitemap/client/sitemap.client.main.controller.js"></script>
+</body>

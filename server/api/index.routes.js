@@ -10,7 +10,7 @@ module.exports = {
         notes: 'goes to home',
         tags: ['api'],
         handler: function(req, res) {
-          return res(req.params.params);
+          res(req.params.params);
         },
       }
     });
